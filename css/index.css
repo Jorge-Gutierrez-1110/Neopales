@@ -328,11 +328,11 @@ body{
 	margin: 10px;
     margin: 20px;
     background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 var(--nav);
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 var(--nav);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .card-arriba{
