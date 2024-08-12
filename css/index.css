@@ -290,15 +290,15 @@ body{
 }
 
 .box-gray-content img{
-	min-width: 570px;
-	height: 370px;
+	max-width: 100%;
+    height: auto;
     border-radius: 12px;
 }
 
 .box-gray-izq{
 	background: linear-gradient( to right, var(--primary-200), var(--txt-azul-iconos));
 	width: 700px;
-	height: 400px;
+	height: 500px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -307,12 +307,11 @@ body{
 .box-gray-der{
 	background: var(--secciones-pequeñas);
 	width: 700px;
-	height: 400px;
+	height: 500px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
 
 
 
