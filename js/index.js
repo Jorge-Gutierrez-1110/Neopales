@@ -26,3 +26,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    $('[data-fancybox="gallery"]').fancybox({
+        // Opcional: Configura Fancybox según tus necesidades
+    });
+});

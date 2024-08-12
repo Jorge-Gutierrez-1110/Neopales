@@ -6,6 +6,7 @@
     <title>Neopales - Proyecto</title>
     <link rel="stylesheet" href="css/proyecto.css">
     <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 </head>
 <body>
 
@@ -21,7 +22,7 @@
         </div>
         <div class="nav-a" id="navMenu">
             <a href="index.html">Inicio</a>
-            <a href="#mapaweb">Mapa de navegacion Web</a>
+            <a href="#mapaweb">Mapa de Navegación Web</a>
             <a href="#mapamovil">Mapa de Navegación Móvil</a>
             <a href="#diagrama">Diagrama R-E</a>
             <a href="#footer">Contacto</a>
@@ -69,7 +70,9 @@
             <h3>Diagrama R-E</h3>
         </div>
         <div class="map-img-png">
-            <img src="img/rimpsa_E-R(W).svg" alt="Diagrama R-E">
+            <a href="img/rimpsa_E-R(W).svg" class="image-link" data-fancybox="gallery" data-caption="Diagrama R-E">
+                <img src="img/rimpsa_E-R(W).svg" alt="Diagrama R-E">
+            </a>
         </div>
     </div>
 
@@ -141,6 +144,7 @@
     </div>
 
     <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
 </body>
 </html>

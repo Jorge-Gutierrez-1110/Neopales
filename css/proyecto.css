@@ -184,7 +184,7 @@ body{
     color: var(--titulo);
 }
 
-.map-img-png{
+.map-img-png {
     background-color: indianred;
     width: 800px;
     height: 550px;
@@ -194,10 +194,10 @@ body{
     align-items: center;
 }
 
-.map-img-png img{
+.map-img-png img {
     background-color: brown;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: auto;
 }
 
 .map-img{
