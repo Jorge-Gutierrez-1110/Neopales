@@ -272,6 +272,11 @@ body{
 	color: white;
 }
 
+.box-gray-content img {
+    max-width: 100%;
+    height: auto;
+}
+
 .box-gray-content h1, h2{
 	font-size: 1.8rem;
 	color: white;
@@ -306,6 +311,8 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+
+
 
 
 
