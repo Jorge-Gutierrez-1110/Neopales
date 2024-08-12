@@ -21,26 +21,52 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
 
         window.scrollTo({
-            top: target.offsetTop - 90, // Recordatorio - ajusta el numero
+            top: target.offsetTop - 90,
             behavior: 'smooth'
         });
     });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    $('[data-fancybox="gallery"]').fancybox({
-        buttons: [ 
-            'zoom',
-            'slideShow',
-            'fullScreen',
-            'thumbs',
-            'close'
-        ],
-        loop: true, // Permite navegar en bucle entre imágenes
-        protect: true, // Protege las imágenes contra la descarga
-        transitionEffect: 'fade', // Efecto de transición entre imágenes
-        caption: function(instance, item) {
-            return $(this).find('img').attr('alt'); // Usa el atributo alt como texto de la imagen
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close-btn');
+    const panzoomContainer = document.getElementById('panzoom-container');
+    
+    let panzoomInstance;
+
+    document.querySelectorAll('.lightbox-trigger').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const imgSrc = this.getAttribute('href');
+            lightboxImg.setAttribute('src', imgSrc);
+
+            if (panzoomInstance) {
+                panzoomInstance.dispose();
+            }
+            panzoomInstance = Panzoom(panzoomContainer, {
+                maxZoom: 5,
+                minZoom: 1,
+                zoomDoubleClickSpeed: 1
+            });
+
+            lightbox.style.display = 'flex';
+        });
+    });
+
+    closeBtn.addEventListener('click', function() {
+        lightbox.style.display = 'none';
+        if (panzoomInstance) {
+            panzoomInstance.dispose();
+        }
+    });
+
+    lightbox.addEventListener('click', function(event) {
+        if (event.target === this) {
+            lightbox.style.display = 'none';
+            if (panzoomInstance) {
+                panzoomInstance.dispose();
+            }
         }
     });
 });

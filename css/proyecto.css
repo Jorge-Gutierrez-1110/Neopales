@@ -163,8 +163,7 @@ body{
 
 
 
-.seccion-map-dia{
-    background-color: #004079;
+.seccion-map-dia {
     padding: 10px;
     margin: 20px;
     display: flex;
@@ -174,46 +173,106 @@ body{
     gap: 10px;
 }
 
-.map-txt{
-    background-color: #E74C3C;
+.map-txt {
     width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 
-.map-txt h3{
-    background-color: yellowgreen;
+.map-txt h3 {
     color: var(--titulo);
+    margin: 0;
 }
 
-.map-img-png{
-    background-color: indianred;
-    width: 800px;
-    height: 550px;
+.map-img-png {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.map-img-png img{
-    background-color: brown;
-    width: 90%;
-    height: 90%;
+.map-img-png img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
-.map-img{
-    background-color: saddlebrown;
-    width: 1500px;
-    height: 1200px;
+.map-img {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.map-img img{
-    background-color: brown;
+.map-img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#panzoom-container {
     width: 90%;
-    height: 90%;
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox-img {
+    max-width: none;
+    max-height: none;
+}
+
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-img {
+    max-width: none;
+    max-height: none;
+    width: 100%;
+    height: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+.lightbox-img.zoomed {
+    transform: scale(1.5);
 }
 
 
