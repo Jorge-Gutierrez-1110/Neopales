@@ -323,9 +323,16 @@ body{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width: 420px;
+	width: 350px;
 	padding: 5px;
 	margin: 10px;
+    margin: 20px;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 var(--nav);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .card-arriba{
@@ -339,11 +346,15 @@ body{
 }
 
 .card-arriba img{
+    border-radius: 50%;
 	width: 150px;
 	height: 150px;
 }
 
 .card-img-izq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	padding: 1px;
 	margin-right: 15px;
 }
@@ -383,6 +394,7 @@ body{
 
 .card-links{
 	display: flex;
+    padding-left: 15px;
 	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
