@@ -164,6 +164,8 @@ body{
 
 
 .seccion-map-dia{
+    background-color: #004079;
+    padding: 10px;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -173,16 +175,19 @@ body{
 }
 
 .map-txt{
+    background-color: #E74C3C;
     width: 100%;
 }
 
 .map-txt h3{
+    background-color: yellowgreen;
     color: var(--titulo);
 }
 
 .map-img{
-    max-width: 650px;
-    max-height: 650px;
+    background-color: springgreen;
+    width: 650px;
+    height: 650px;
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -190,6 +195,7 @@ body{
 }
 
 .map-img img{
+    background-color: brown;
     width: 90%;
     height: 90%;
 }
