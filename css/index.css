@@ -354,7 +354,7 @@ body{
 }
 
 .card-arriba img{
-    border-radius: 50%;
+    border-radius: 10px;
 	width: 150px;
 	height: 150px;
 }
