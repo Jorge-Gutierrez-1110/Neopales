@@ -184,10 +184,26 @@ body{
     color: var(--titulo);
 }
 
+.map-img-png{
+    background-color: indianred;
+    width: 800px;
+    height: 550px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-img-png img{
+    background-color: brown;
+    width: 90%;
+    height: 90%;
+}
+
 .map-img{
     background-color: saddlebrown;
     width: 1500px;
-    height: 800px;
+    height: 900px;
     padding: 5px;
     display: flex;
     justify-content: center;
