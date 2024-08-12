@@ -29,6 +29,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 document.addEventListener('DOMContentLoaded', function() {
     $('[data-fancybox="gallery"]').fancybox({
-        // Opcional: Configura Fancybox según tus necesidades
+        buttons: [ 
+            'zoom',
+            'slideShow',
+            'fullScreen',
+            'thumbs',
+            'close'
+        ],
+        loop: true, // Permite navegar en bucle entre imágenes
+        protect: true, // Protege las imágenes contra la descarga
+        transitionEffect: 'fade', // Efecto de transición entre imágenes
+        caption: function(instance, item) {
+            return $(this).find('img').attr('alt'); // Usa el atributo alt como texto de la imagen
+        }
     });
 });
