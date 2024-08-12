@@ -74,6 +74,7 @@ body{
     text-decoration: none;
     color: var(--body-botones-secciones-pequeñas-iconos);
     transition: all 0.3s ease;
+    border-bottom: 1px solid var(--secciones-pequeñas);
 }
 
 .nav-a a:hover {
